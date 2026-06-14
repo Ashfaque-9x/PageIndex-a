@@ -1,0 +1,26 @@
+Video Link --- https://youtu.be/CJXLnwx5vVs
+
+1. curl http://localhost:11434/v1/models
+
+2. ollama pull qwen2.5:7b
+
+3. git clone https://github.com/Ashfaque-9x/PageIndex-a.git  
+    cd cd PageIndex-a
+
+4. py -3.11 -m venv rag311
+    Activate it at rag311\Scripts\activate
+
+5. pip install -r requirements.txt
+
+6. ollama run qwen2.5:7b
+    Use Ctrl + d or /bye to exit.
+
+7. 
+python run_pageindex.py `
+  --pdf_path "C:\Users\Ashfaque Shaikh\Pictures\Sample PDFs\Matter Around Us.pdf" `
+  --model "ollama/qwen2.5:7b" `
+  --if-add-node-text yes `
+  --summary-token-threshold 100 `
+  --max-tokens-per-node 800
+
+8. python tree_rag_chat.py
